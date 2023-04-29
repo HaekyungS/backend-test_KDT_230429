@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>divroot_no</title>
+  </head>
+  <body>
+    <script>
+      if (false) {
+        const div = document.createElement('div')
+        div.setAttribute('id', 'root')
+        document.body.appendChild(div);
+
+        const p = document.createElement('p')
+        p.innerText = "저는 div#root 이 싫어서 no 를 했습니다. 그래서 전 body의 자식으로 바로 위치한 p태그 입니다";
+        div.appendChild(p)
+      } else {
+        const p = document.createElement('p')
+        p.innerText = "저는 div#root 이 싫어서 no 를 했습니다. 그래서 전 body의 자식으로 바로 위치한 p태그 입니다";
+        document.body.appendChild(p)
+      }
+    </script>
+  </body>
+</html>
